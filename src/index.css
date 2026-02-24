@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* Colors */
+  --bg-beige: #eaddc0; /* from the bee drawing & menu background */
+  --text-brown: #382414; /* from the menu text */
+  --matcha-green: #557a46; /* from matcha matcha poster */
+  --matcha-light: #8ca37f;
+
+  /* Fonts */
+  --font-logo: "Caveat", cursive; /* playful script font */
+  --font-sans: "Outfit", sans-serif; /* clean modern sans serif */
+
+  /* Micro-animations */
+  --border-radius: 16px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-beige);
+  color: var(--text-brown);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo-text {
+  font-family: var(--font-logo);
+  color: var(--text-brown);
+}
+
+a {
+  color: var(--text-brown);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--matcha-green);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-beige);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--matcha-green);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-brown);
+}

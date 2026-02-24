@@ -1,0 +1,112 @@
+.menu-page {
+  padding: 4rem 2rem;
+  background-color: var(--bg-beige);
+  min-height: 100vh;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.menu-section {
+  background: white;
+  padding: 4rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(56, 36, 20, 0.05);
+}
+
+.menu-main-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.category-title {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--matcha-green);
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.menu-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* keep everything centered vertically */
+  width: 100%;
+  min-height: 48px; /* consistent height for all rows */
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* center text like in the image */
+  flex: 0 0 45%; /* Fix width for the text portion */
+  text-align: center;
+}
+
+.item-name {
+  font-weight: 700;
+  color: var(--text-brown);
+  font-size: 1.15rem;
+}
+
+.item-desc {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.4rem;
+  line-height: 1.2;
+}
+
+.item-price-info {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center; /* Center the line and price with the text */
+  margin-left: 1rem;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted rgba(56, 36, 20, 0.2);
+  margin: 0 15px;
+}
+
+.item-price {
+  font-weight: 700;
+  color: var(--text-brown);
+  font-size: 1.1rem;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .menu-main-title {
+    font-size: 3rem;
+  }
+}
